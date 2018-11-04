@@ -9,6 +9,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _http2.default.createServer(function (req, res) {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
   res.end('Hello World\n');
-}).listen(3000, '127.0.0.1');
-
-console.log('Server running at http://127.0.0.1:1337/');
+}).listen(process.env.PORT || 3000, function () {
+  return console.log('Listening on ' + PORT);
+});
