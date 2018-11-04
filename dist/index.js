@@ -10,5 +10,5 @@ _http2.default.createServer(function (req, res) {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
   res.end('Hello World\n');
 }).listen(process.env.PORT || 3000, function () {
-  return console.log('Listening on ' + PORT);
+  return console.log('Listening on ' + (process.env.PORT || 3000));
 });
