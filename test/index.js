@@ -1,5 +1,6 @@
 import http from 'http';
 import assert from 'assert';
+require('dotenv').config();
 
 import '../lib/index.js';
 
