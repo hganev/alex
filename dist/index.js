@@ -9,8 +9,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 require('dotenv').config();
 
 _http2.default.createServer(function (req, res) {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('Hello World\n');
+  res.writeHead(200, { 'Content-Type': 'text/html' });
+  res.end('<div> Hello World </div> ');
 }).listen(process.env.PORT || 3000, function () {
   return console.log('Listening on ' + (process.env.PORT || 3000));
 });
